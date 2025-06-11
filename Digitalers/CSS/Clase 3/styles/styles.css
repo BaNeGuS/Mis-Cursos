@@ -1,0 +1,15 @@
+html {
+    background-color: slategray;
+}
+
+h1 {
+	color: white;
+}
+
+div {
+    background-color: lightgreen;
+}
+
+div p {
+    background-color: lightblue;
+}

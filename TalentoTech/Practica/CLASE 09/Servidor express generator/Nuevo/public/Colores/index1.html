@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título de la página</title>
+    <link rel="stylesheet" href="/Colores/styles1.css">
+    <script src="script.js" defer></script>
+    <!-- STYLE -->
+    <style>
+        h2 {
+            color: white;
+            background-color: rgb(136, 89, 163);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: rgb(255, 255, 255); background-color:rgb(68, 89, 146)">Encabezado de la página</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Acerca de</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside>
+        <h2>Barra lateral</h2>
+        <p>Contenido del aside</p>
+        <span>Este es el primer &lt;span&gt;.</span>
+        <span id="span" class="span">Este es el segundo &lt;span&gt;.</span>
+        <span class="span" id="span">Este es el tercer &lt;span&gt;.</span>
+        <span style="background-color: lightsalmon;">Este es el cuarto &lt;span&gt;.</span>
+    </aside>
+
+    <main>
+        <h2>Contenido principal</h2>
+        <p id="parrafo">Amet consectetur, adipisicing elit.</p id="parrafo">
+        <p tabindex="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec justo eget dolor commodo cursus sed sed libero.</p>
+        <p id="e">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Nemo dolor placeat dignissimos totam eligendi alias, quisquam, necessitatibus magni illum modi quos velit quae laborum sequi iste ipsum itaque, atque dolorfes?
+        </p>
+
+        <hr>
+        <p class="p1">Este es un párrafo clase p1</p>
+
+        <!-- <div style="margin-bottom: 2000px;"></div> -->
+        <div class="contenedor">
+            <img src="images/img3.jpg" alt="img" width="50%">
+            <img src="./images/img.jpg" alt="img" width="23%">
+            <img src="../images/img1.jpg" alt="img" width="23%">
+        </div>
+        <center>
+            <a href="Colores/carpeta1/pagina1.html" style="color:white;">Ir a pagina1</a>
+        </center>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nombre de tu empresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

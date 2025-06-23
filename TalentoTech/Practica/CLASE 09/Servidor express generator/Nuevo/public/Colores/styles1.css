@@ -1,0 +1,67 @@
+/* Selector Universal */
+body {
+	font-family: "Comic Sans MS";
+	background: linear-gradient(rgb(183, 0, 255), pink, blue);
+}
+
+/* Selector por etiqueta */
+p:not(.p1, #e) {
+	color: black;
+	background-color: #c5f370 !important;
+	background-color: lightblue;
+	font-family: Verdana;
+	font-size: smaller;
+}
+
+/* Selector por clase */
+.p1 {
+	color: white;
+	background-color: black !important;
+	font-family: "Courier New";
+	font-weight: bold;
+	font-size: 25px;
+}
+
+/* Importancia - Especificidad */
+/* NOTA: Estos selectores abarcan unicamente los <span> del <aside> */
+aside > #span {
+	background-color: lightblue;
+} /* ID tiene más prioridad que CLASS */
+aside > .span {
+	background-color: rgb(50, 187, 205);
+} /* CLASS tiene más prioridad que etiqueta */
+aside > span {
+	background-color: pink;
+} /* <ETIQUETA> tiene menor prioridad */
+aside > span {
+	background-color: pink;
+	display: block;
+} /* Al no tener una propiedad con valor especificada en otros span se aplica a todos */
+
+.contenedor {
+	background-size: contain;
+	background-image: url(../images/img2.jpg);
+	/* filter: blur(5px);*/
+}
+
+.contenedor::before {
+	background-image: url(../images/img.jpg);
+	filter: blur(10px);
+}
+
+header a {
+	color: aliceblue;
+	text-decoration: none;
+}
+
+header a:visited {
+	color: #402955; /* Púrpura oscuro */
+}
+
+header a:hover {
+	color: #90dd2b; /* Rojo anaranjado */
+}
+
+header a:active {
+	color: #2ba4b9; /* Verde claro */
+}

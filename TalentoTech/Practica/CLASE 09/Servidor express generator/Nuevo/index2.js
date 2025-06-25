@@ -19,6 +19,11 @@ app.get("/", (req, res) => {
 	res.send("Hola desde Express con middlewares!");
 });
 
+//Ping-Pong
+app.get("/ping", (req, res) => {
+	res.send("pong");
+});
+
 app.use((req, res) => {
   res.status(404).send('Página no encontrada');
 });
